@@ -14,6 +14,11 @@
 		59B80FEB22F3D72600F05E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B80FE922F3D72600F05E0F /* LaunchScreen.storyboard */; };
 		59B80FF622F3D72700F05E0F /* CheckThisTuneV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B80FF522F3D72700F05E0F /* CheckThisTuneV2Tests.swift */; };
 		59B8100122F3D72700F05E0F /* CheckThisTuneV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8100022F3D72700F05E0F /* CheckThisTuneV2UITests.swift */; };
+		59B8101022F3D86C00F05E0F /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8100F22F3D86C00F05E0F /* TunerViewController.swift */; };
+		59B8102522F3F09600F05E0F /* TunerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8101122F3D8DC00F05E0F /* TunerModel.swift */; };
+		59B8102E22F3F20000F05E0F /* TunerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8101622F3DA3C00F05E0F /* TunerModelTests.swift */; };
+		59B8103322F3F28B00F05E0F /* CheckThisTuneV2.app in Resources */ = {isa = PBXBuildFile; fileRef = 59B80FDD22F3D72600F05E0F /* CheckThisTuneV2.app */; };
+		59B8103422F3F28C00F05E0F /* CheckThisTuneV2.app in Resources */ = {isa = PBXBuildFile; fileRef = 59B80FDD22F3D72600F05E0F /* CheckThisTuneV2.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,9 @@
 		59B80FFC22F3D72700F05E0F /* CheckThisTuneV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckThisTuneV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B8100022F3D72700F05E0F /* CheckThisTuneV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckThisTuneV2UITests.swift; sourceTree = "<group>"; };
 		59B8100222F3D72700F05E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59B8100F22F3D86C00F05E0F /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
+		59B8101122F3D8DC00F05E0F /* TunerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerModel.swift; sourceTree = "<group>"; };
+		59B8101622F3DA3C00F05E0F /* TunerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerModelTests.swift; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		59B80FDF22F3D72600F05E0F /* CheckThisTuneV2 */ = {
 			isa = PBXGroup;
 			children = (
+				59B8100E22F3D83E00F05E0F /* Tuner */,
 				59B80FE022F3D72600F05E0F /* AppDelegate.swift */,
 				59B80FE222F3D72600F05E0F /* ViewController.swift */,
 				59B80FE422F3D72600F05E0F /* Main.storyboard */,
@@ -110,6 +119,7 @@
 		59B80FF422F3D72700F05E0F /* CheckThisTuneV2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				59B8101522F3DA2B00F05E0F /* Tuner */,
 				59B80FF522F3D72700F05E0F /* CheckThisTuneV2Tests.swift */,
 				59B80FF722F3D72700F05E0F /* Info.plist */,
 			);
@@ -123,6 +133,23 @@
 				59B8100222F3D72700F05E0F /* Info.plist */,
 			);
 			path = CheckThisTuneV2UITests;
+			sourceTree = "<group>";
+		};
+		59B8100E22F3D83E00F05E0F /* Tuner */ = {
+			isa = PBXGroup;
+			children = (
+				59B8100F22F3D86C00F05E0F /* TunerViewController.swift */,
+				59B8101122F3D8DC00F05E0F /* TunerModel.swift */,
+			);
+			path = Tuner;
+			sourceTree = "<group>";
+		};
+		59B8101522F3DA2B00F05E0F /* Tuner */ = {
+			isa = PBXGroup;
+			children = (
+				59B8101622F3DA3C00F05E0F /* TunerModelTests.swift */,
+			);
+			path = Tuner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B8103322F3F28B00F05E0F /* CheckThisTuneV2.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B8103422F3F28C00F05E0F /* CheckThisTuneV2.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				59B80FE322F3D72600F05E0F /* ViewController.swift in Sources */,
+				59B8101022F3D86C00F05E0F /* TunerViewController.swift in Sources */,
+				59B8102522F3F09600F05E0F /* TunerModel.swift in Sources */,
 				59B80FE122F3D72600F05E0F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B8102E22F3F20000F05E0F /* TunerModelTests.swift in Sources */,
 				59B80FF622F3D72700F05E0F /* CheckThisTuneV2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
