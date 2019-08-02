@@ -8,11 +8,20 @@
 
 import UIKit
 
-class TunerViewController: UIViewController {
+class TunerViewController: UIViewController, ObserverProtocol {
+
+    var id: String = "TunerViewController";
+    var tunerModel: Observable<TunerModel>?;
+    
+    func onChanged(value: Any?) {
+        // Update View
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tunerModel = Observable(observableValue: TunerModel());
+        tunerModel?.addObserver(observer: self);
         // Do any additional setup after loading the view.
     }
     
