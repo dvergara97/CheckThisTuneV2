@@ -8,13 +8,11 @@
 
 import Foundation
 
-class Observable<T> : ObservableProtocol {
+class Observable : ObservableProtocol {
     
-    private var value : T;
-    var observers: [ObserverProtocol];
+    private var observers: [ObserverProtocol];
     
-    init(observableValue : T) {
-        value = observableValue;
+    init() {
         observers = [];
     }
     
@@ -46,9 +44,9 @@ class Observable<T> : ObservableProtocol {
         }
     }
     
-    func notifyObservers() {
+    func notifyObservers(value : Any?) {
         for observer in observers {
-            observer.onChanged(value: nil);
+            observer.onChanged(value: value);
         }
     }
     

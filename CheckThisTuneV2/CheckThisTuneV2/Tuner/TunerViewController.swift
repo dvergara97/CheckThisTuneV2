@@ -11,17 +11,21 @@ import UIKit
 class TunerViewController: UIViewController, ObserverProtocol {
 
     var id: String = "TunerViewController";
-    var tunerModel: Observable<TunerModel>?;
+    var tunerModel = TunerModel();
+    @IBOutlet weak var noteNameLabel: UILabel!
+    
     
     func onChanged(value: Any?) {
-        // Update View
+        if let message = (value as? TunerMessage) {
+            noteNameLabel.text = message.getCurrentFrequencyNote();
+        }
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tunerModel = Observable(observableValue: TunerModel());
-        tunerModel?.addObserver(observer: self);
+        tunerModel.addObserver(observer: self);
+        noteNameLabel.text = "Hello world!"
         // Do any additional setup after loading the view.
     }
     

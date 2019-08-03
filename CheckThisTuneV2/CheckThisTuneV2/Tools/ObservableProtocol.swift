@@ -10,10 +10,10 @@ import Foundation
 
 protocol ObservableProtocol {
     
-    var observers : [ObserverProtocol] {get set}
+    // var observers : [ObserverProtocol] {get set}
     
     func addObserver(observer : ObserverProtocol);
     func removeObserver(observer : ObserverProtocol);
-    func notifyObservers();
+    func notifyObservers(value : Any?);
     
 }

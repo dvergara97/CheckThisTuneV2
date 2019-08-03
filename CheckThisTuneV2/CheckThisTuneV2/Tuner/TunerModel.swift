@@ -15,12 +15,13 @@ class TunerModel : Observable {
     private var previousFrequency : Double;
     private var currentFrequency : Double;
     
-    init() {
+    override init() {
         self.noteFrequencies = [220.0, 233.08, 246.94, 261.63, 277.18, 293.66, 311.13,
                            329.63, 349.23, 369.99, 392.00, 415.30, 440.0];
-        self.noteNames = ["A", "Bb", "B", "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "A"];
+        self.noteNames = ["A", "Bb", "B", "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A"];
         self.previousFrequency = 440.0;
         self.currentFrequency = 440.0;
+        //super.init();
     }
     
     func setNote(newFrequency: Double) {
@@ -34,6 +35,14 @@ class TunerModel : Observable {
             indexClosestTo: closestCurrent);
         let previousPercentageAway = getPercentageAway(frequency: self.currentFrequency,
             indexClosestTo: closestPrevious);
+        
+        print(closestCurrent);
+        notifyObservers(
+            value: TunerMessage(currentFrequencyNote: self.noteNames[closestCurrent],
+                                         previousFrequencyNote: self.noteNames[closestPrevious],
+                                         currentFrequencyPercentage: currentPercentageAway,
+                                         previousFrequencyPercentage: previousPercentageAway)
+                                );
     }
     
     private func putFrequencyInRange(frequency : Double) -> Double {
@@ -61,10 +70,6 @@ class TunerModel : Observable {
     
     private func isDoubleEqual(double1 : Double, double2 : Double) -> Bool {
         return fabs(double1 - double2) < 0.000000001;
-    }
-    
-    func getCurrentFrequency() -> Double {
-        return self.currentFrequency;
     }
     
     private func getIndexClosest(noteFrequency : Double) -> Int   {
@@ -113,6 +118,39 @@ class TunerModel : Observable {
             let distance = closest - frequency;
             return -(distance / totalDistance);
         }
+    }
+    
+}
+
+class TunerMessage {
+    
+    private var currentFrequencyNote : String;
+    private var previousFrequencyNote : String;
+    private var currentFrequencyPercentage : Double;
+    private var previousFrequencyPercentage : Double;
+    
+    init(currentFrequencyNote : String, previousFrequencyNote : String,
+         currentFrequencyPercentage : Double, previousFrequencyPercentage : Double) {
+        self.currentFrequencyNote = currentFrequencyNote;
+        self.previousFrequencyNote = previousFrequencyNote;
+        self.currentFrequencyPercentage = currentFrequencyPercentage;
+        self.previousFrequencyPercentage = previousFrequencyPercentage;
+    }
+    
+    func getCurrentFrequencyNote() -> String {
+        return self.currentFrequencyNote;
+    }
+    
+    func getPreviousFrequencyNote() -> String {
+        return self.previousFrequencyNote;
+    }
+    
+    func getCurrentFrequencyPercentage() -> Double {
+        return self.currentFrequencyPercentage;
+    }
+
+    func getPreviousFrequencyPercentage() -> Double {
+        return self.previousFrequencyPercentage;
     }
     
 }
