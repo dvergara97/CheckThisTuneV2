@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5946447822F66A9F00E2D2BA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5946447722F66A9F00E2D2BA /* .gitignore */; };
+		593A83DB22F66DC60042CE20 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 593A83DA22F66DC60042CE20 /* .gitignore */; };
+		5946447322F5068200E2D2BA /* TunerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8101622F3DA3C00F05E0F /* TunerModelTests.swift */; };
 		59B80FE122F3D72600F05E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B80FE022F3D72600F05E0F /* AppDelegate.swift */; };
-		59B80FE322F3D72600F05E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B80FE222F3D72600F05E0F /* ViewController.swift */; };
 		59B80FE622F3D72600F05E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B80FE422F3D72600F05E0F /* Main.storyboard */; };
 		59B80FE822F3D72600F05E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B80FE722F3D72600F05E0F /* Assets.xcassets */; };
 		59B80FEB22F3D72600F05E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B80FE922F3D72600F05E0F /* LaunchScreen.storyboard */; };
 		59B80FF622F3D72700F05E0F /* CheckThisTuneV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B80FF522F3D72700F05E0F /* CheckThisTuneV2Tests.swift */; };
 		59B8100122F3D72700F05E0F /* CheckThisTuneV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8100022F3D72700F05E0F /* CheckThisTuneV2UITests.swift */; };
+		59B8101022F3D86C00F05E0F /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8100F22F3D86C00F05E0F /* TunerViewController.swift */; };
+		59B8102522F3F09600F05E0F /* TunerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8101122F3D8DC00F05E0F /* TunerModel.swift */; };
+		59B8103322F3F28B00F05E0F /* CheckThisTuneV2.app in Resources */ = {isa = PBXBuildFile; fileRef = 59B80FDD22F3D72600F05E0F /* CheckThisTuneV2.app */; };
+		59B8103422F3F28C00F05E0F /* CheckThisTuneV2.app in Resources */ = {isa = PBXBuildFile; fileRef = 59B80FDD22F3D72600F05E0F /* CheckThisTuneV2.app */; };
+		59B8103722F4135B00F05E0F /* ObservableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8103622F4135B00F05E0F /* ObservableProtocol.swift */; };
+		59B8103922F4161300F05E0F /* ObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8103822F4161300F05E0F /* ObserverProtocol.swift */; };
+		59B8103B22F4172D00F05E0F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8103A22F4172D00F05E0F /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5946447722F66A9F00E2D2BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		593A83DA22F66DC60042CE20 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		59B80FDD22F3D72600F05E0F /* CheckThisTuneV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckThisTuneV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B80FE022F3D72600F05E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59B80FE222F3D72600F05E0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59B80FE522F3D72600F05E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59B80FE722F3D72600F05E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59B80FEA22F3D72600F05E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		59B80FFC22F3D72700F05E0F /* CheckThisTuneV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckThisTuneV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B8100022F3D72700F05E0F /* CheckThisTuneV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckThisTuneV2UITests.swift; sourceTree = "<group>"; };
 		59B8100222F3D72700F05E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59B8100F22F3D86C00F05E0F /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
+		59B8101122F3D8DC00F05E0F /* TunerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerModel.swift; sourceTree = "<group>"; };
+		59B8101622F3DA3C00F05E0F /* TunerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerModelTests.swift; sourceTree = "<group>"; usesTabs = 0; };
+		59B8103622F4135B00F05E0F /* ObservableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableProtocol.swift; sourceTree = "<group>"; };
+		59B8103822F4161300F05E0F /* ObserverProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverProtocol.swift; sourceTree = "<group>"; };
+		59B8103A22F4172D00F05E0F /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +91,7 @@
 		59B80FD422F3D72600F05E0F = {
 			isa = PBXGroup;
 			children = (
-				5946447722F66A9F00E2D2BA /* .gitignore */,
+				593A83DA22F66DC60042CE20 /* .gitignore */,
 				59B80FDF22F3D72600F05E0F /* CheckThisTuneV2 */,
 				59B80FF422F3D72700F05E0F /* CheckThisTuneV2Tests */,
 				59B80FFF22F3D72700F05E0F /* CheckThisTuneV2UITests */,
@@ -100,8 +112,9 @@
 		59B80FDF22F3D72600F05E0F /* CheckThisTuneV2 */ = {
 			isa = PBXGroup;
 			children = (
+				59B8103522F4133E00F05E0F /* Tools */,
+				59B8100E22F3D83E00F05E0F /* Tuner */,
 				59B80FE022F3D72600F05E0F /* AppDelegate.swift */,
-				59B80FE222F3D72600F05E0F /* ViewController.swift */,
 				59B80FE422F3D72600F05E0F /* Main.storyboard */,
 				59B80FE722F3D72600F05E0F /* Assets.xcassets */,
 				59B80FE922F3D72600F05E0F /* LaunchScreen.storyboard */,
@@ -113,6 +126,7 @@
 		59B80FF422F3D72700F05E0F /* CheckThisTuneV2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				59B8101522F3DA2B00F05E0F /* Tuner */,
 				59B80FF522F3D72700F05E0F /* CheckThisTuneV2Tests.swift */,
 				59B80FF722F3D72700F05E0F /* Info.plist */,
 			);
@@ -126,6 +140,33 @@
 				59B8100222F3D72700F05E0F /* Info.plist */,
 			);
 			path = CheckThisTuneV2UITests;
+			sourceTree = "<group>";
+		};
+		59B8100E22F3D83E00F05E0F /* Tuner */ = {
+			isa = PBXGroup;
+			children = (
+				59B8100F22F3D86C00F05E0F /* TunerViewController.swift */,
+				59B8101122F3D8DC00F05E0F /* TunerModel.swift */,
+			);
+			path = Tuner;
+			sourceTree = "<group>";
+		};
+		59B8101522F3DA2B00F05E0F /* Tuner */ = {
+			isa = PBXGroup;
+			children = (
+				59B8101622F3DA3C00F05E0F /* TunerModelTests.swift */,
+			);
+			path = Tuner;
+			sourceTree = "<group>";
+		};
+		59B8103522F4133E00F05E0F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				59B8103622F4135B00F05E0F /* ObservableProtocol.swift */,
+				59B8103822F4161300F05E0F /* ObserverProtocol.swift */,
+				59B8103A22F4172D00F05E0F /* Observable.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5946447822F66A9F00E2D2BA /* .gitignore in Resources */,
+
+				593A83DB22F66DC60042CE20 /* .gitignore in Resources */,
 				59B80FEB22F3D72600F05E0F /* LaunchScreen.storyboard in Resources */,
 				59B80FE822F3D72600F05E0F /* Assets.xcassets in Resources */,
 				59B80FE622F3D72600F05E0F /* Main.storyboard in Resources */,
@@ -243,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B8103322F3F28B00F05E0F /* CheckThisTuneV2.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B8103422F3F28C00F05E0F /* CheckThisTuneV2.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59B80FE322F3D72600F05E0F /* ViewController.swift in Sources */,
+				59B8101022F3D86C00F05E0F /* TunerViewController.swift in Sources */,
+				59B8102522F3F09600F05E0F /* TunerModel.swift in Sources */,
 				59B80FE122F3D72600F05E0F /* AppDelegate.swift in Sources */,
+				59B8103722F4135B00F05E0F /* ObservableProtocol.swift in Sources */,
+				59B8103B22F4172D00F05E0F /* Observable.swift in Sources */,
+				59B8103922F4161300F05E0F /* ObserverProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5946447322F5068200E2D2BA /* TunerModelTests.swift in Sources */,
 				59B80FF622F3D72700F05E0F /* CheckThisTuneV2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
