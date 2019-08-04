@@ -69,3 +69,4 @@ fastlane/test_output
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
+*.xcuserstate
