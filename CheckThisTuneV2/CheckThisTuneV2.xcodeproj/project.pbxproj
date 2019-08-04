@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593A83DB22F66DC60042CE20 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 593A83DA22F66DC60042CE20 /* .gitignore */; };
 		5946447322F5068200E2D2BA /* TunerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8101622F3DA3C00F05E0F /* TunerModelTests.swift */; };
 		59B80FE122F3D72600F05E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B80FE022F3D72600F05E0F /* AppDelegate.swift */; };
 		59B80FE622F3D72600F05E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B80FE422F3D72600F05E0F /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		593A83DA22F66DC60042CE20 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		59B80FDD22F3D72600F05E0F /* CheckThisTuneV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckThisTuneV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B80FE022F3D72600F05E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B80FE522F3D72600F05E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		59B80FD422F3D72600F05E0F = {
 			isa = PBXGroup;
 			children = (
+				593A83DA22F66DC60042CE20 /* .gitignore */,
 				59B80FDF22F3D72600F05E0F /* CheckThisTuneV2 */,
 				59B80FF422F3D72700F05E0F /* CheckThisTuneV2Tests */,
 				59B80FFF22F3D72700F05E0F /* CheckThisTuneV2UITests */,
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593A83DB22F66DC60042CE20 /* .gitignore in Resources */,
 				59B80FEB22F3D72600F05E0F /* LaunchScreen.storyboard in Resources */,
 				59B80FE822F3D72600F05E0F /* Assets.xcassets in Resources */,
 				59B80FE622F3D72600F05E0F /* Main.storyboard in Resources */,
